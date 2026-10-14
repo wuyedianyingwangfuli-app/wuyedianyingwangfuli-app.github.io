@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>午夜电影网福利 | 深夜片单与观影指南 · wuyedianyingwangfuli-app</title>
+<meta name="description" content="午夜电影网福利（wuyedianyingwangfuli-app）是一个聚焦深夜观影场景的影视资源导航站，提供热播片单、类型分类与观影指南。涵盖悬疑、剧情、惊悚、文艺等片种，帮你快速找到适合凌晨独自观看的影片。站点托管于 https://wuyedianyingwangfuli-app.github.io，持续更新片单与栏目内容。">
+<meta name="keywords" content="午夜电影网福利, wuyedianyingwangfuli-app, 深夜电影, 悬疑片推荐, 剧情片片单, 惊悚片导航, 文艺片推荐, 观影指南, 影视资源, 电影分类, github.io 影视站">
+<meta name="author" content="午夜电影网福利">
+<meta name="copyright" content="午夜电影网福利">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="baidu-site-verification" content="wuyedianyingwangfuli-app-verify">
+<meta name="bingbot" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="geo.region" content="CN">
+<meta name="geo.placename" content="中国">
+<meta name="theme-color" content="#0d0f1a">
+<link rel="canonical" href="https://wuyedianyingwangfuli-app.github.io/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="午夜电影网福利">
+<meta property="og:title" content="午夜电影网福利 · 深夜观影片单与导航">
+<meta property="og:description" content="聚焦凌晨时段的影视资源导航与观影指南，持续更新热播片单与类型分类。">
+<meta property="og:url" content="https://wuyedianyingwangfuli-app.github.io/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="午夜电影网福利">
+<meta name="twitter:description" content="深夜观影片单与影视资源导航站">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "午夜电影网福利",
+  "alternateName": ["午夜电影网福利 wuyedianyingwangfuli-app", "wuyedianyingwangfuli-app 影视导航"],
+  "url": "https://wuyedianyingwangfuli-app.github.io/",
+  "description": "聚焦深夜观影场景的影视资源导航与片单分享站，提供热播片单、类型分类与观影指南。",
+  "inLanguage": "zh-CN",
+  "copyrightHolder": {"@type": "Organization", "name": "午夜电影网福利"},
+  "potentialAction": {"@type": "SearchAction", "target": "https://wuyedianyingwangfuli-app.github.io/#search", "query-input": "required name=search_term_string"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "午夜电影网福利",
+  "url": "https://wuyedianyingwangfuli-app.github.io/",
+  "description": "影视资源导航与观影指南站点",
+  "areaServed": "CN",
+  "sameAs": ["https://wuyedianyingwangfuli-app.github.io/"]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:#0d0f1a;color:#e8e8f0;line-height:1.7;
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+img{max-width:100%;display:block}
+:root{
+  --neon:#ff2e63;--neon2:#7b2ff7;--cyan:#18d6d6;
+  --ink:#0d0f1a;--card:#151828;--line:rgba(255,255,255,.08);
+  --txt:#e8e8f0;--dim:#9aa0c3;--gold:#ffcf5c;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+/* ===== 顶部 ===== */
+.hd{
+  position:fixed;top:0;left:0;right:0;z-index:99;
+  background:rgba(13,15,26,.86);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.hd-in{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{display:flex;align-items:center;gap:10px;font-size:19px;font-weight:800;letter-spacing:.5px}
+.logo i{
+  width:34px;height:34px;border-radius:9px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--neon),var(--neon2));
+  font-size:17px;font-style:normal;box-shadow:0 6px 20px rgba(255,46,99,.35);
+}
+.logo small{font-size:12px;font-weight:500;color:var(--dim);display:block;letter-spacing:0}
+.nav{display:flex;gap:6px;align-items:center}
+.nav a{
+  padding:7px 13px;border-radius:20px;font-size:14px;color:var(--dim);
+  transition:.25s;white-space:nowrap;
+}
+.nav a:hover{color:#fff;background:rgba(255,255,255,.06)}
+.menu-btn{display:none;width:42px;height:42px;border:1px solid var(--line);border-radius:10px;background:transparent;color:#fff;font-size:20px;cursor:pointer}
+/* ===== 首屏 ===== */
+.hero{
+  margin-top:62px;padding:90px 0 70px;position:relative;text-align:center;overflow:hidden;
+  background:
+    radial-gradient(900px 400px at 50% -10%,rgba(123,47,247,.28),transparent 70%),
+    radial-gradient(700px 360px at 85% 20%,rgba(255,46,99,.18),transparent 70%),
+    radial-gradient(700px 360px at 15% 40%,rgba(24,214,214,.12),transparent 70%);
+}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:46px 46px;mask-image:linear-gradient(#000,transparent 80%);
+}
+.tag-line{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--cyan);border:1px solid rgba(24,214,214,.35);padding:6px 16px;border-radius:30px;margin-bottom:22px;background:rgba(24,214,214,.06)}
+.tag-line span{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan);animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hero h1{font-size:clamp(30px,5.6vw,56px);line-height:1.2;font-weight:900;letter-spacing:-.5px}
+.hero h1 em{font-style:normal;background:linear-gradient(92deg,var(--neon),var(--neon2) 55%,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{margin:22px auto 0;max-width:640px;color:var(--dim);font-size:16px}
+.hero-acts{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:30px;
+  font-size:15px;font-weight:600;cursor:pointer;border:0;transition:.25s;
+}
+.btn-pri{background:linear-gradient(92deg,var(--neon),var(--neon2));color:#fff;box-shadow:0 10px 30px rgba(255,46,99,.35)}
+.btn-pri:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(255,46,99,.5)}
+.btn-ghost{background:rgba(255,255,255,.06);color:#fff;border:1px solid var(--line)}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.stats{display:flex;gap:46px;justify-content:center;flex-wrap:wrap;margin-top:52px;position:relative}
+.stat b{display:block;font-size:32px;font-weight:800;background:linear-gradient(92deg,#fff,var(--dim));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{font-size:13px;color:var(--dim)}
+/* ===== 通用区块 ===== */
+section{padding:78px 0;position:relative}
+.sec-hd{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:40px}
+.sec-t{display:flex;align-items:center;gap:12px;font-size:13px;color:var(--neon);letter-spacing:2px;text-transform:uppercase}
+.sec-t b{width:28px;height:2px;background:var(--neon)}
+.sec-hd h2{font-size:clamp(23px,3.4vw,34px);font-weight:800;margin-top:6px}
+.sec-hd p{color:var(--dim);max-width:420px;font-size:14px}
+/* ===== 热播片单 ===== */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;
+  transition:.3s;display:flex;flex-direction:column;
+}
+.card:hover{transform:translateY(-6px);border-color:rgba(255,46,99,.4);box-shadow:0 20px 44px rgba(0,0,0,.5)}
+.poster{position:relative;aspect-ratio:3/4;overflow:hidden}
+.poster .cv{position:absolute;inset:0;display:grid;place-items:center;font-size:44px;
+  background:linear-gradient(150deg,var(--c1,#2a2f4f),var(--c2,#1a1c30));
+}
+.poster .badge{
+  position:absolute;top:12px;left:12px;font-size:11px;padding:4px 10px;border-radius:6px;
+  background:rgba(0,0,0,.6);backdrop-filter:blur(4px);color:var(--gold);font-weight:600;
+}
+.poster .rate{
+  position:absolute;top:12px;right:12px;font-size:12px;font-weight:700;color:#0d0f1a;
+  background:var(--gold);padding:3px 9px;border-radius:6px;
+}
+.poster .ep{position:absolute;bottom:0;left:0;right:0;padding:26px 14px 12px;font-size:12px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.85))}
+.card-body{padding:16px 16px 18px;flex:1;display:flex;flex-direction:column}
+.card-body h3{font-size:16px;font-weight:700;margin-bottom:6px}
+.card-body .meta{font-size:12px;color:var(--dim);margin-bottom:12px;display:flex;gap:8px;flex-wrap:wrap}
+.card-body .meta i{font-style:normal;padding:2px 8px;border-radius:4px;background:rgba(255,255,255,.05)}
+.card-body p{font-size:13px;color:var(--dim);flex:1}
+.card-foot{display:flex;align-items:center;justify-content:space-between;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+.card-foot a{font-size:13px;font-weight:600;color:var(--neon)}
+.card-foot span{font-size:12px;color:var(--dim)}
+/* ===== 分类导航 ===== */
+.cat{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cat-item{
+  position:relative;padding:28px 24px;border-radius:18px;border:1px solid var(--line);
+  background:linear-gradient(160deg,var(--card),rgba(21,24,40,.4));overflow:hidden;transition:.3s;
+}
+.cat-item::before{content:"";position:absolute;width:150px;height:150px;border-radius:50%;right:-60px;top:-60px;background:var(--accent);opacity:.12;transition:.4s}
+.cat-item:hover{transform:translateY(-4px);border-color:transparent;box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.cat-item:hover::before{transform:scale(1.4)}
+.cat-item .no{font-size:13px;font-weight:700;color:var(--accent);letter-spacing:1px}
+.cat-item h3{font-size:20px;font-weight:800;margin:10px 0 8px}
+.cat-item p{font-size:13px;color:var(--dim)}
+.cat-item .num{position:absolute;right:20px;bottom:14px;font-size:30px;font-weight:900;color:rgba(255,255,255,.04)}
+/* ===== 指南 ===== */
+.guide{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.steps{display:flex;flex-direction:column;gap:14px}
+.step{
+  display:flex;gap:18px;padding:20px 22px;border-radius:16px;background:var(--card);
+  border:1px solid var(--line);transition:.25s;
+}
+.step:hover{border-color:rgba(24,214,214,.35);transform:translateX(4px)}
+.step .n{
+  flex:none;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;
+  font-weight:800;font-size:17px;color:#0d0f1a;background:linear-gradient(135deg,var(--cyan),#6be0e0);
+}
+.step h4{font-size:16px;font-weight:700;margin-bottom:3px}
+.step p{font-size:13px;color:var(--dim)}
+.guide-side{border-radius:22px;padding:34px;background:linear-gradient(150deg,var(--neon),var(--neon2));color:#fff;box-shadow:0 24px 50px rgba(123,47,247,.3)}
+.guide-side h3{font-size:24px;font-weight:800;margin-bottom:12px}
+.guide-side p{font-size:14px;opacity:.92}
+.guide-side ul{margin:20px 0 26px;display:flex;flex-direction:column;gap:11px}
+.guide-side li{display:flex;gap:10px;align-items:flex-start;font-size:14px}
+.guide-side li::before{content:"✓";flex:none;width:20px;height:20px;border-radius:50%;background:rgba(255,255,255,.2);display:grid;place-items:center;font-size:12px;margin-top:2px}
+/* ===== 关于 ===== */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.about-txt h2{font-size:clamp(23px,3.4vw,34px);font-weight:800;margin-bottom:16px}
+.about-txt p{color:var(--dim);margin-bottom:14px;font-size:15px}
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+.feat div{padding:20px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
+.feat b{display:block;font-size:22px;font-weight:800;color:var(--gold)}
+.feat span{font-size:13px;color:var(--dim)}
+.about-form{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:34px}
+.about-form h3{font-size:20px;font-weight:800;margin-bottom:6px}
+.about-form p{font-size:13px;color:var(--dim);margin-bottom:22px}
+.f-row{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.f-row label{font-size:13px;color:var(--dim)}
+.f-row input,.f-row textarea{
+  width:100%;padding:12px 14px;border-radius:11px;border:1px solid var(--line);
+  background:rgba(255,255,255,.04);color:#fff;font-size:14px;font-family:inherit;transition:.2s;
+}
+.f-row input:focus,.f-row textarea:focus{outline:none;border-color:var(--neon);background:rgba(255,46,99,.05)}
+.f-row textarea{min-height:110px;resize:vertical}
+.about-form button{width:100%;justify-content:center}
+/* ===== 页脚 ===== */
+.ft{border-top:1px solid var(--line);padding:50px 0 30px;background:#0a0c14}
+.ft-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;margin-bottom:40px}
+.ft-brand p{color:var(--dim);font-size:13px;margin-top:12px;max-width:280px}
+.ft h5{font-size:15px;font-weight:700;margin-bottom:14px}
+.ft ul{display:flex;flex-direction:column;gap:9px}
+.ft a{color:var(--dim);font-size:13px;transition:.2s}
+.ft a:hover{color:var(--neon)}
+.ft-bot{
+  padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;
+  flex-wrap:wrap;gap:12px;font-size:12px;color:var(--dim);
+}
+.ft-bot code{background:rgba(255,255,255,.06);padding:3px 8px;border-radius:5px;font-size:12px;color:var(--cyan)}
+/* ===== 回到顶部 ===== */
+.top{
+  position:fixed;right:20px;bottom:24px;z-index:98;width:46px;height:46px;border-radius:50%;
+  border:1px solid var(--line);background:var(--card);color:#fff;font-size:18px;cursor:pointer;
+  display:none;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.4);transition:.25s;
+}
+.top.show{display:grid}
+/* ===== 响应式 ===== */
+@media (max-width:960px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .cat{grid-template-columns:1fr 1fr}
+  .guide,.about{grid-template-columns:1fr;gap:30px}
+  .ft-top{grid-template-columns:1fr 1fr}
+  section{padding:56px 0}
+}
+@media (max-width:680px){
+  .wrap{padding:0 16px}
+  .hero{padding:60px 0 48px}
+  .menu-btn{display:grid;place-items:center}
+  .nav{
+    position:fixed;top:62px;left:0;right:0;flex-direction:column;align-items:stretch;
+    background:rgba(13,15,26,.98);padding:16px;border-top:1px solid var(--line);
+    gap:2px;transform:translateY(-120%);transition:.35s;visibility:hidden;
+  }
+  .nav.open{transform:translateY(0);visibility:visible}
+  .nav a{padding:14px 16px;border-radius:10px}
+  .stats{gap:26px}
+  .grid,.cat,.ft-top{grid-template-columns:1fr}
+  .feat{grid-template-columns:1fr}
+  .sec-hd{margin-bottom:28px}
+  .about-form{padding:24px}
+  .ft-bot{flex-direction:column;text-align:center}
+}
+@media print{.hd,.menu-btn,.top,.hero-acts,.about-form{display:none}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<header class="hd">
+  <div class="wrap hd-in">
+    <a class="logo" href="https://wuyedianyingwangfuli-app.github.io/" title="午夜电影网福利首页">
+      <i>🎬</i>
+      <span>午夜电影网福利<small>wuyedianyingwangfuli-app</small></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="https://wuyedianyingwangfuli-app.github.io/#home">首页</a>
+      <a href="https://wuyedianyingwangfuli-app.github.io/#showing">热播片单</a>
+      <a href="https://wuyedianyingwangfuli-app.github.io/#category">分类导航</a>
+      <a href="https://wuyedianyingwangfuli-app.github.io/#guide">观影指南</a>
+      <a href="https://wuyedianyingwangfuli-app.github.io/#about">关于我们</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<main>
+  <!-- 首页 -->
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="tag-line"><span></span>每晚 22:00 后 · 专属深夜片单</div>
+      <h1>当城市安静下来<br>在<em>午夜电影网福利</em>遇见好电影</h1>
+      <p>一个专注于凌晨观影场景的影视资源导航站，为失眠者、影迷与独处时刻整理值得一看的影片。由 <strong style="color:#fff">wuyedianyingwangfuli-app</strong> 持续维护，覆盖悬疑、剧情、惊悚、文艺等多种类型。</p>
+      <div class="hero-acts">
+        <a class="btn btn-pri" href="https://wuyedianyingwangfuli-app.github.io/#showing">浏览今日片单 →</a>
+        <a class="btn btn-ghost" href="https://wuyedianyingwangfuli-app.github.io/#category">查看分类</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>5</b><span>内容栏目</span></div>
+        <div class="stat"><b>12+</b><span>影片类型</span></div>
+        <div class="stat"><b>每日</b><span>更新片单</span></div>
+        <div class="stat"><b>免费</b><span>开放浏览</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热播片单 -->
+  <section id="showing">
+    <div class="wrap">
+      <div class="sec-hd">
+        <div>
+          <div class="sec-t"><b></b>NOW SHOWING · 热播片单</div>
+          <h2>今晚看什么？这 8 部值得排进片单</h2>
+        </div>
+        <p>从悬疑反转到文艺治愈，每一部都标注了适合观看的情绪时段，帮你快速做决定。</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="poster"><div class="cv" style="--c1:#2b1055;--c2:#7597de">🎞️</div><span class="badge">悬疑 · 2026</span><span class="rate">9.1</span><div class="ep">108 min · 蓝光修复版</div></div>
+          <div class="card-body">
+            <h3>午夜记忆折叠</h3>
+            <div class="meta"><i>悬疑</i><i>反转</i><i>烧脑</i></div>
+            <p>主角每晚醒来都会遗忘前一天，必须靠录像带拼凑真相，节奏紧凑，适合凌晨独自观看。</p>
+            <div class="card-foot"><a href="#">查看详情 ›</a><span>更新于今日</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster"><div class="cv" style="--c1:#3a0d20;--c2:#c0392b">🕯️</div><span class="badge">惊悚 · 2025</span><span class="rate">8.7</span><div class="ep">96 min · 中文字幕</div></div>
+          <div class="card-body">
+            <h3>空房间里的回音</h3>
+            <div class="meta"><i>惊悚</i><i>心理</i><i>密闭空间</i></div>
+            <p>一栋待售老宅、一段录音带，恐惧来自想象而非画面，深夜观看体验翻倍。</p>
+            <div class="card-foot"><a href="#">查看详情 ›</a><span>更新于昨日</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster"><div class="cv" style="--c1:#0f4c5c;--c2:#1a936f">🌊</div><span class="badge">文艺 · 2025</span><span class="rate">8.9</span><div class="ep">124 min · 4K 重制</div></div>
+          <div class="card-body">
+            <h3>海边的第七封信</h3>
+            <div class="meta"><i>文艺</i><i>治愈</i><i>长镜头</i></div>
+            <p>慢节奏、大留白，适合失眠时当作声音画面一起消化，情绪很轻但不寡淡。</p>
+            <div class="card-foot"><a href="#">查看详情 ›</a><span>本周热门</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster"><div class="cv" style="--c1:#3d1f00;--c2:#d98324">🚂</div><span class="badge">剧情 · 2024</span><span class="rate">9.3</span><div class="ep">138 min · 获奖影片</div></div>
+          <div class="card-body">
+            <h3>末班车开往春天</h3>
+            <div class="meta"><i>剧情</i><i>群像</i><i>温情</i></div>
+            <p>一车陌生人被大雪困在高原小站，每个人背后都藏着一段没讲完的故事。</p>
+            <div class="card-foot"><a href="#">查看详情 ›</a><span>编辑精选</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster"><div class="cv" style="--c1:#1a1a2e;--c2:#16213e">🔍</div><span class="badge">犯罪 · 2026</span><span class="rate">8.5</span><div class="ep">112 min · 案件还原</div></div>
+          <div class="card-body">
+            <h3>雨夜档案 No.7</h3>
+            <div class="meta"><i>犯罪</i><i>推理</i><i>硬汉</i></div>
+            <p>雨夜、便利店、三份口供。从细节里找破绽，适合喜欢边看边推理的观众。</p>
+            <div class="card-foot"><a href="#">查看详情 ›</a><span>新片上线</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster"><div class="cv" style="--c1:#3a0ca3;--c2:#7209b7">🛸</div><span class="badge">科幻 · 2025</span><span class="rate">8.8</span><div class="ep">130 min · 视效大片</div></div>
+          <div class="card-body">
+            <h3>倒数 88 光年</h3>
+            <div class="meta"><i>科幻</i><i>太空</i><i>孤独</i></div>
+            <p>一艘独自航行的飞船与一个 AI，讨论时间、记忆与人类是否值得被拯救。</p>
+            <div class="card-foot"><a href="#">查看详情 ›</a><span>视听推荐</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster"><div class="cv" style="--c1:#602080;--c2:#c77dff">💃</div><span class="badge">歌舞 · 2024</span><span class="rate">8.4</span><div class="ep">105 min · 音乐现场</div></div>
+          <div class="card-body">
+            <h3>霓虹舞步</h3>
+            <div class="meta"><i>歌舞</i><i>复古</i><i>律动</i></div>
+            <p>用音乐替代对白讲述一段旧城区的追梦往事，看完会想立刻打开播放列表。</p>
+            <div class="card-foot"><a href="#">查看详情 ›</a><span>心情调剂</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster"><div class="cv" style="--c1:#004b23;--c2:#38b000">🌿</div><span class="badge">纪录 · 2026</span><span class="rate">9.0</span><div class="ep">90 min · 自然影像</div></div>
+          <div class="card-body">
+            <h3>寂静山林观测手记</h3>
+            <div class="meta"><i>纪录</i><i>自然</i><i>治愈</i></div>
+            <p>没有旁白的森林四季，被失眠困扰时打开它，比白噪音更有画面感。</p>
+            <div class="card-foot"><a href="#">查看详情 ›</a><span>助眠片单</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分类导航 -->
+  <section id="category" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.02))">
+    <div class="wrap">
+      <div class="sec-hd">
+        <div>
+          <div class="sec-t"><b></b>CATEGORY · 分类导航</div>
+          <h2>按心情挑片，比按名字找更快</h2>
+        </div>
+        <p>12 个常用分类，对应不同的情绪与观看场景，点击进入对应片单页。</p>
+      </div>
+      <div class="cat">
+        <a class="cat-item" href="#" style="--accent:#ff2e63"><span class="no">CAT.01</span><h3>悬疑烧脑</h3><p>反转、推理、细节控必看，越晚看越入戏。</p><span class="num">01</span></a>
+        <a class="cat-item" href="#" style="--accent:#7b2ff7"><span class="no">CAT.02</span><h3>惊悚心理</h3><p>靠氛围而非音效制造紧张感，深夜慎点。</p><span class="num">02</span></a>
+        <a class="cat-item" href="#" style="--accent:#18d6d6"><span class="no">CAT.03</span><h3>文艺治愈</h3><p>慢节奏长镜头，适合失眠时安静消化。</p><span class="num">03</span></a>
+        <a class="cat-item" href="#" style="--accent:#ffcf5c"><span class="no">CAT.04</span><h3>剧情群像</h3><p>人物关系复杂，看完想找人讨论。</p><span class="num">04</span></a>
+        <a class="cat-item" href="#" style="--accent:#38b000"><span class="no">CAT.05</span><h3>纪录真实</h3><p>自然、人文、社会题材，拓展认知边界。</p><span class="num">05</span></a>
+        <a class="cat-item" href="#" style="--accent:#d98324"><span class="no">CAT.06</span><h3>科幻视效</h3><p>太空、时间、AI，大银幕感题材。</p><span class="num">06</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 观影指南 -->
+  <section id="guide">
+    <div class="wrap">
+      <div class="guide">
+        <div>
+          <div class="sec-t"><b></b>GUIDE · 观影指南</div>
+          <h2 style="font-size:clamp(23px,3.4vw,34px);font-weight:800;margin:8px 0 22px">四步找到属于你的「今晚那部片」</h2>
+          <div class="steps">
+            <div class="step"><span class="n">1</span><div><h4>先定情绪，再挑类型</h4><p>想清醒就选悬疑犯罪，想放松选文艺纪录，想被惊到选心理惊悚。</p></div></div>
+            <div class="step"><span class="n">2</span><div><h4>看时长，别挑战意志力</h4><p>凌晨看片优先 90–110 分钟，超过 140 分钟容易在中段睡着。</p></div></div>
+            <div class="step"><span class="n">3</span><div><h4>检查字幕与画质标注</h4><p>蓝光修复 / 4K 重制适合大屏，手机小屏优先选择竖屏友好版本。</p></div></div>
+            <div class="step"><span class="n">4</span><div><h4>看完留一句短评</h4><p>在评论区留下你的评分与一句话感受，帮更多人做选择。</p></div></div>
+          </div>
+        </div>
+        <aside class="guide-side">
+          <h3>片单筛选小工具</h3>
+          <p>按你当下的状态勾选，30 秒出结果。</p>
+          <ul>
+            <li>现在想「清醒」还是「放松」？</li>
+            <li>能接受的最大时长是多少？</li>
+            <li>偏好字幕版还是原声版？</li>
+            <li>是否介意黑暗或惊悚画面？</li>
+            <li>想看新片还是经典老片？</li>
+          </ul>
+          <a class="btn btn-ghost" href="https://wuyedianyingwangfuli-app.github.io/#showing" style="background:rgba(255,255,255,.18);border-color:transparent;color:#fff">按答案去片单 →</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于我们 -->
+  <section id="about" style="background:linear-gradient(180deg,rgba(255,255,255,.02),transparent)">
+    <div class="wrap">
+      <div class="about">
+        <div class="about-txt">
+          <div class="sec-t"><b></b>ABOUT · 关于我们</div>
+          <h2>午夜电影网福利 想做的事很简单</h2>
+          <p>每天深夜都有人因为睡不着而打开屏幕，也有人在独自的时间里想找一部「对味」的影片。<strong style="color:#fff">午夜电影网福利</strong>（站点地址：<code style="background:rgba(255,255,255,.08);padding:2px 7px;border-radius:5px;color:var(--cyan)">https://wuyedianyingwangfuli-app.github.io</code>）正是为这类时刻而生。</p>
+          <p>我们不追求数量，只把「适合深夜观看」这一条标准做扎实：标注类型、时长、字幕与情绪标签，让你少翻十页、少踩一次坑。</p>
+          <div class="feat">
+            <div><b>22:00</b><span>每日片单更新时间</span></div>
+            <div><b>100%</b><span>免费开放浏览</span></div>
+            <div><b>12</b><span>影片分类标签</span></div>
+            <div><b>7×24</b><span>站点持续在线</span></div>
+          </div>
+        </div>
+        <form class="about-form" onsubmit="event.preventDefault();alert('提交成功，感谢你的建议！');this.reset();">
+          <h3>给片单提个建议</h3>
+          <p>想看什么类型的影片？告诉我们，会被写进下一期片单。</p>
+          <div class="f-row"><label>称呼</label><input type="text" placeholder="怎么称呼你" required></div>
+          <div class="f-row"><label>邮箱（选填，用于回复）</label><input type="email" placeholder="you@example.com"></div>
+          <div class="f-row"><label>想推荐的类型或影片</label><textarea placeholder="例如：想要更多 90 分钟内的治愈系文艺片"></textarea></div>
+          <button class="btn btn-pri" type="submit">提交建议</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <a class="logo" href="https://wuyedianyingwangfuli-app.github.io/"><i>🎬</i><span>午夜电影网福利<small>wuyedianyingwangfuli-app</small></span></a>
+        <p>聚焦深夜观影场景的影视资源导航与片单分享站，帮助你更快找到今晚想看的影片。</p>
+      </div>
+      <div><h5>站点栏目</h5><ul>
+        <li><a href="https://wuyedianyingwangfuli-app.github.io/#home">首页</a></li>
+        <li><a href="https://wuyedianyingwangfuli-app.github.io/#showing">热播片单</a></li>
+        <li><a href="https://wuyedianyingwangfuli-app.github.io/#category">分类导航</a></li>
+        <li><a href="https://wuyedianyingwangfuli-app.github.io/#guide">观影指南</a></li>
+      </ul></div>
+      <div><h5>影片分类</h5><ul>
+        <li><a href="#">悬疑烧脑</a></li>
+        <li><a href="#">惊悚心理</a></li>
+        <li><a href="#">文艺治愈</a></li>
+        <li><a href="#">科幻视效</a></li>
+      </ul></div>
+      <div><h5>关于与访问</h5><ul>
+        <li><a href="https://wuyedianyingwangfuli-app.github.io/#about">关于我们</a></li>
+        <li><a href="#">投稿与合作</a></li>
+        <li><a href="https://wuyedianyingwangfuli-app.github.io/">站点首页</a></li>
+        <li><a href="#">RSS 订阅</a></li>
+      </ul></div>
+    </div>
+    <div class="ft-bot">
+      <span>© <span id="yr"></span> 午夜电影网福利 · 本网站托管于 <code>https://wuyedianyingwangfuli-app.github.io</code>，仅供影视信息分享与观影交流。</span>
+      <span>本站域名：wuyedianyingwangfuli-app · 仅供影视信息分享与观影交流</span>
+    </div>
+  </div>
+</footer>
+
+<button class="top" id="topBtn" aria-label="回到顶部">↑</button>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+var menuBtn = document.getElementById('menuBtn');
+var nav = document.getElementById('nav');
+menuBtn.addEventListener('click', function(){ nav.classList.toggle('open'); });
+nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ nav.classList.remove('open'); }); });
+var topBtn = document.getElementById('topBtn');
+window.addEventListener('scroll', function(){
+  if(window.scrollY > 500){ topBtn.classList.add('show'); } else { topBtn.classList.remove('show'); }
+});
+topBtn.addEventListener('click', function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click', function(e){
+    var id = a.getAttribute('href');
+    if(id.length > 1 && document.querySelector(id)){
+      e.preventDefault();
+      document.querySelector(id).scrollIntoView({behavior:'smooth'});
+    }
+  });
+});
+</script>
+</body>
+</html>
